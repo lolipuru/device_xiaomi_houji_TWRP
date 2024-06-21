@@ -126,6 +126,7 @@ leds-qti-flash.ko
 leds-qti-tri-led.ko
 mi_mempool.ko
 proc_exit.ko
+mi_wmark.ko
 binder_prio.ko
 mi_log.ko
 mi_exception_log.ko
@@ -288,7 +289,6 @@ ubwcp.ko
 btpower.ko
 bt_fm_slim.ko
 radio-i2c-rtc6226-qca.ko
-tango32.ko
 synaptics_tcm2.ko
 xiaomi_touch.ko
 qca_cld3_kiwi_v2.ko
