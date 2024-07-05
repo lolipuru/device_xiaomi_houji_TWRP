@@ -11,7 +11,7 @@ $(call inherit-product, device/nubia/pq83a01/device.mk)
 PRODUCT_RELEASE_NAME := pq83a01
 
 PRODUCT_DEVICE := pq83a01
-PRODUCT_NAME := omni_pq83a01
+PRODUCT_NAME := twrp_pq83a01
 PRODUCT_BRAND := nubia
 PRODUCT_MODEL := NX721J
 PRODUCT_MANUFACTURER := nubia
