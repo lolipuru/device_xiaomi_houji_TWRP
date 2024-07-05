@@ -1,9 +1,9 @@
 <!--
     Input:
         system/libhidl/vintfdata/manifest.xml
-        device/xiaomi/missi/framework_manifest.xml
+        device/qcom/qssi_64/framework_manifest.xml
 -->
-<manifest version="4.0" type="framework">
+<manifest version="7.0" type="framework">
     <hal format="hidl" max-level="6">
         <name>android.frameworks.displayservice</name>
         <transport>hwbinder</transport>
@@ -67,4 +67,3 @@
         <version>34</version>
     </system-sdk>
 </manifest>
-

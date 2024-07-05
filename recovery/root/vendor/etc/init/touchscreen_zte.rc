@@ -1,0 +1,68 @@
+
+# this init flow for touchscreen
+
+on boot
+# proc/touchscreen
+    chown system system /proc/touchscreen/wake_gesture
+    chmod 644 /proc/touchscreen/wake_gesture
+    chown system system /proc/touchscreen/smart_cover
+    chmod 644 /proc/touchscreen/smart_cover
+    chown system system proc/touchscreen/headset_state
+    chmod 644 proc/touchscreen/headset_state
+    chown system system proc/touchscreen/mRotation
+    chown system system proc/touchscreen/single_tap
+    chown system system proc/touchscreen/single_aod
+    chmod 666 proc/touchscreen/single_aod
+    chown system system proc/touchscreen/get_noise
+    chown system system proc/touchscreen/edge_report_limit
+    chmod 664 proc/touchscreen/edge_report_limit
+    chown system system proc/touchscreen/one_key
+    chmod 644 proc/touchscreen/one_key
+    chown system system proc/touchscreen/play_game
+    chmod 644 proc/touchscreen/play_game
+    chmod 0664 /proc/touchscreen/screen_state_interface
+    chown system system /proc/touchscreen/screen_state_interface
+    chown system system /sys/bus/platform/devices/zte_touch/uevent
+    chown 0664 /sys/bus/platform/devices/zte_touch/uevent
+    chmod 0777 /data/local/tmp
+    chown system system proc/touchscreen/sensibility
+    chmod 644 proc/touchscreen/sensibility
+    chown system system proc/touchscreen/tp_report_rate
+    chmod 644 proc/touchscreen/tp_report_rate
+    chown system system proc/touchscreen/follow_hand_level
+    chmod 644 proc/touchscreen/follow_hand_level
+    chown system system proc/touchscreen/rotation_limit_level
+    chmod 644 proc/touchscreen/rotation_limit_level
+    chown system system proc/touchscreen/pen_only
+    chmod 646 proc/touchscreen/pen_only
+    chown system system proc/touchscreen/tp_self_test
+    chmod 646 proc/touchscreen/tp_self_test
+    chown system system proc/touchscreen/tp_palm_mode
+    chmod 646 proc/touchscreen/tp_palm_mode
+
+# add for touch self-test
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_cmd
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_filename
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_ini_file_path
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_save_file_path
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_save_file_name
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_bsc_calibration
+    chown system system /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_bsc_calibration_start
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_cmd
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_filename
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_ini_file_path
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_save_file_path
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_save_file_name
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_bsc_calibration
+    chmod 0646 /sys/devices/virtual/tsp_fw/touchscreen/tpd_test_bsc_calibration_start
+    chmod 0646 /dev/gtp_tools
+
+#add for sensorhub tp_ps sensor
+    chown system system /sys/class/tp_ps/enable
+    chown system system /sys/class/tp_ps/delay
+    chown system system /sys/class/tp_ps/batch
+    chown system system /sys/class/tp_ps/flush
+    chmod 664 /sys/class/tp_ps/enable
+    chmod 664 /sys/class/tp_ps/delay
+    chmod 664 /sys/class/tp_ps/batch
+    chmod 664 /sys/class/tp_ps/flush
