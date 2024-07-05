@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/nubia/PQ83A01
+DEVICE_PATH := device/nubia/pq83a01
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -50,8 +50,8 @@ TARGET_SCREEN_DENSITY := 480
 BOARD_BOOTIMG_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
-TARGET_KERNEL_CONFIG := PQ83A01_defconfig
-TARGET_KERNEL_SOURCE := kernel/nubia/PQ83A01
+TARGET_KERNEL_CONFIG := pq83a01_defconfig
+TARGET_KERNEL_SOURCE := kernel/nubia/pq83a01
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -146,5 +146,5 @@ TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko qti_battery_charger.ko"
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone35/temp"
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 TW_BACKUP_EXCLUSIONS := /data/fonts
-TW_DEVICE_VERSION := PQ83A01
+TW_DEVICE_VERSION := pq83a01
 TW_NO_HAPTICS := true
